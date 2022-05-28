@@ -107,6 +107,11 @@ nav {
   margin-right: 10px;
 }
 
+.pagination-container {
+  display: flex;
+  
+}
+
 
 
 .App {

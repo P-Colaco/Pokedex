@@ -1,12 +1,12 @@
 import React from "react";
 
 const Pagination = (props) => {
-    const {page, totalPages, }
+    const {page, totalPages, onLeftClick, onRightClick} = props
     return (
         <div className="pagination-container">
-            <button ></button>
-            <div></div>
-            <button ></button>
+            <button onClick={onLeftClick}><div>⬅️</div></button>
+            <div className="pagination-text">{page} of {totalPages}</div>
+            <button onClick={onRightClick}><div>➡️</div></button>
         </div>
     )
 }
